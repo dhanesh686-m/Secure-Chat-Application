@@ -15,7 +15,7 @@ This project implements a basic secure chat application with a client-server arc
    5.GUI Client: An interactive graphical interface for ease of use.
 
 
-# Create Instance on your preferred webservice provider(I have Used AWS as my Webservice Provider)
+# Create Instance on Your Preferred Webservice Provider(I have Used AWS as my Webservice Provider)
 
   1. Sign In to AWS Management Console 🚀 using -  https://aws.amazon.com/console/
     
@@ -65,7 +65,7 @@ This project implements a basic secure chat application with a client-server arc
   
  10. After Launching the Instance , Check the status as Running and then check for your Public IP address.
 
-# Upload your server.py
+# Upload Your Server.py
 
 From your local terminal :scp -i /path/to/your/key-pair-name.pem /path/to/local/server.py ec2-user@YOUR_PUBLIC_IP_ADDRESS:/home/ec2-user
 
@@ -73,7 +73,7 @@ From your local terminal :scp -i /path/to/your/key-pair-name.pem /path/to/local/
       
    Replace /path/to/local/server.py with actual path and filename of your server.py file
 
-# Connect EC2 instance using .pem file
+# Connect EC2 Instance Using .pem File
 
   1.Locate Your .pem File 📂
   
@@ -85,7 +85,7 @@ From your local terminal :scp -i /path/to/your/key-pair-name.pem /path/to/local/
   
    Replace /path/to/your/key-pair-name.pem with the actual path and filename of your .pem
 
-# Running Server in EC2 terminal
+# Running Server in EC2 Terminal
 
   1. Use ls cmd to verify the server.py file
     
@@ -105,13 +105,13 @@ From your local terminal :scp -i /path/to/your/key-pair-name.pem /path/to/local/
   
   2.Use the following command to run client.py : python3 client.py
 
-## Enter The username and Hit enter
+## Enter the username and hit enter
 
 ### Enter the username of reciptent in the assinged place 
 
 ### Enter the message in the assinged place and hit enter
 
-### To see Active users , Click "List of Active user".
+### To see ctive users , click "List of Active user".
 
 
-# Enjoy Chatting without any risk of privacy breach!!
+# Enjoy chatting without any risk of privacy breach!!
