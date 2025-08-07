@@ -97,7 +97,7 @@ def aes_decrypt(key, iv, ciphertext, tag):
     return plaintext
 
 # --- Client Logic ---
-HOST = '13.127.182.89'  # <--- THIS MUST BE YOUR SERVER'S PUBLIC IP ADDRESS
+HOST = 'YOUR_SERVER_PUBLIC_IP_ADDRESS'  # <--- THIS MUST BE YOUR SERVER'S PUBLIC IP ADDRESS
 PORT = 65432        # The same port the server is listening on
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
