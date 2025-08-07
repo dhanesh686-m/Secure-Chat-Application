@@ -33,32 +33,33 @@ This project implements a basic secure chat application with a client-server arc
   
   6.Create or Select a Key Pair (Login) 🔑
   
-         i)Create new key pair. Give it a Key pair name
+   i)Create new key pair. Give it a Key pair name
         
-       ii)Click Create key pair. Your private key file (.pem) will be downloaded automatically. Keep this file secure and            private! You will need it to SSH into               your instance.
+   ii)Click Create key pair. Your private key file (.pem) will be downloaded automatically. Keep this file secure and            private! You will need it to SSH into               your instance.
        
-      iii)If you already have a key pair, select it from the dropdown.
+   iii)If you already have a key pair, select it from the dropdown.
       
   7.Configure Network Settings 🌐
   
-      i)Click Edit Network Settings
+   i)Click Edit Network Settings
       
-     ii)Security group name: Give it a name
+   ii)Security group name: Give it a name
      
-    iii)Inbound security group rules:
+   iii)Inbound security group rules:
 
-    Rule 1 (SSH): By default, SSH (Port 22) is usually added. Ensure its Source type is set to My IP (for your current IP) or Anywhere (0.0.0.0/0) if you need to connect from various locations (less secure).
+   Rule 1 (SSH): By default, SSH (Port 22) is usually added. Ensure its Source type is set to My IP (for your current IP) or Anywhere (0.0.0.0/0) if you need to connect from     various locations (less secure).
 
-    Rule 2 (Chat App Port): Click Add security group rule.
+   Rule 2 (Chat App Port): Click Add security group rule.
 
-        Type: Select Custom TCP.
+   Type: Select Custom TCP.
 
-        Port range: Enter 65432.
+   Port range: Enter 65432.
 
-        Source type: Select Anywhere-IPv4 (0.0.0.0/0). This is crucial for your chat clients to connect from anywhere on the internet.
+   Source type: Select Anywhere-IPv4 (0.0.0.0/0). This is crucial for your chat clients to connect from anywhere on the internet.
 
-        Description (optional): Chat App Port
-  8.Configure Storage 💾 : The default 8 GiB (Gigabytes) of General Purpose SSD (gp2 or gp3) is usually sufficient for a basic server. You can increase it if needed, but stay within the free tier limits if applicable.
+   Description (optional): Chat App Port
+  
+  8.Configure Storage 💾 : The default 8 GiB (Gigabytes) of General Purpose SSD (gp2 or gp3) is usually sufficient for a basic server. You can increase it if needed, but stay     within the free tier limits if applicable.
   
   9.Review and Launch 🚀 : Review all your settings before launching And Click Launch instance.
   
@@ -68,9 +69,9 @@ This project implements a basic secure chat application with a client-server arc
 
 From your local terminal :scp -i /path/to/your/key-pair-name.pem /path/to/local/server.py ec2-user@YOUR_PUBLIC_IP_ADDRESS:/home/ec2-user
 
-      Replace /path/to/your/key-pair-name.pem with the actual path and filename of your .pem
+   Replace /path/to/your/key-pair-name.pem with the actual path and filename of your .pem
       
-      Replace /path/to/local/server.py with actual path and filename of your server.py file
+   Replace /path/to/local/server.py with actual path and filename of your server.py file
 
 # Connect EC2 instance using .pem file
 
@@ -78,11 +79,11 @@ From your local terminal :scp -i /path/to/your/key-pair-name.pem /path/to/local/
   
   2.Set Correct Permissions using command : chmod 400 /path/to/your/key-pair-name.pem
   
-      Replace /path/to/your/key-pair-name.pem with the actual path and filename of your .pem
+   Replace /path/to/your/key-pair-name.pem with the actual path and filename of your .pem
       
   3.Connect to Your EC2 Instance via SSH 🚀 using command : ssh -i /path/to/your/key-pair-name.pem ec2-user@YOUR_PUBLIC_IP_ADDRESS
   
-      Replace /path/to/your/key-pair-name.pem with the actual path and filename of your .pem
+   Replace /path/to/your/key-pair-name.pem with the actual path and filename of your .pem
 
 # Running Server in EC2 terminal
 
