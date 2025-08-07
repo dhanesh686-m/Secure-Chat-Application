@@ -15,7 +15,7 @@ Features ✨
 
 # Prerequisites 📦
 
-Before you begin, ensure you have the following installed on both your server machine (AWS EC2 instance) and your client machine (your Kali Linux desktop):
+Before you begin, ensure you have the following installed on both your server machine (AWS EC2 instance) and your client machine :
 
     Python 3.x:
 
@@ -85,7 +85,7 @@ Before you begin, ensure you have the following installed on both your server ma
 
 # Upload your server.py
 
-From your local Kali Linux terminal :scp -i /path/to/your/key-pair-name.pem /path/to/local/server.py ec2-user@YOUR_PUBLIC_IP_ADDRESS:/home/ec2-user
+From your local terminal :scp -i /path/to/your/key-pair-name.pem /path/to/local/server.py ec2-user@YOUR_PUBLIC_IP_ADDRESS:/home/ec2-user
 
       Replace /path/to/your/key-pair-name.pem with the actual path and filename of your .pem
       
