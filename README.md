@@ -114,4 +114,4 @@ From your local terminal :scp -i /path/to/your/key-pair-name.pem /path/to/local/
 ### To see Active users , Click "List of Active user".
 
 
-# Enjoy Chatting without any risk of privacy!!
+# Enjoy Chatting without any risk of privacy breach!!
