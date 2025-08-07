@@ -81,7 +81,7 @@ Before you begin, ensure you have the following installed on both your server ma
   
   9.Review and Launch 🚀 : Review all your settings before launching And Click Launch instance.
   
-  10. After Launching the Instance , Check the status as Running and then check for your Public IP address.
+ 10. After Launching the Instance , Check the status as Running and then check for your Public IP address.
 
 #Upload your server.py
 
