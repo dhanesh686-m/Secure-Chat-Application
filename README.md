@@ -1,4 +1,4 @@
-#Secure Chat Application 🔒💬
+# Secure Chat Application 🔒💬
 
 This project implements a basic secure chat application with a client-server architecture using Python. It demonstrates end-to-end encryption for messages exchanged between clients, leveraging RSA for key exchange and AES-256 (GCM mode) for message encryption. The client features a simple Graphical User Interface (GUI) built with tkinter.
 Features ✨
@@ -13,7 +13,7 @@ Features ✨
 
     GUI Client: An interactive graphical interface for ease of use.
 
-#Prerequisites 📦
+# Prerequisites 📦
 
 Before you begin, ensure you have the following installed on both your server machine (AWS EC2 instance) and your client machine (your Kali Linux desktop):
 
@@ -34,7 +34,7 @@ Before you begin, ensure you have the following installed on both your server ma
     sudo apt install python3-tk # For Debian/Ubuntu-based systems
 
 
-#Create Instance on your preferred webservice provider(I have Used AWS as my Webservice Provider)
+# Create Instance on your preferred webservice provider(I have Used AWS as my Webservice Provider)
 
   1. Sign In to AWS Management Console 🚀 using -  https://aws.amazon.com/console/
     
@@ -83,7 +83,7 @@ Before you begin, ensure you have the following installed on both your server ma
   
  10. After Launching the Instance , Check the status as Running and then check for your Public IP address.
 
-#Upload your server.py
+# Upload your server.py
 
 From your local Kali Linux terminal :scp -i /path/to/your/key-pair-name.pem /path/to/local/server.py ec2-user@YOUR_PUBLIC_IP_ADDRESS:/home/ec2-user
 
@@ -91,7 +91,7 @@ From your local Kali Linux terminal :scp -i /path/to/your/key-pair-name.pem /pat
       
       Replace /path/to/local/server.py with actual path and filename of your server.py file
 
-#Connect EC2 instance using .pem file
+# Connect EC2 instance using .pem file
 
   1.Locate Your .pem File 📂
   
@@ -103,7 +103,7 @@ From your local Kali Linux terminal :scp -i /path/to/your/key-pair-name.pem /pat
   
       Replace /path/to/your/key-pair-name.pem with the actual path and filename of your .pem
 
-#Running Server in EC2 terminal
+# Running Server in EC2 terminal
 
   1. Use ls cmd to verify the server.py file
     
@@ -117,19 +117,19 @@ From your local Kali Linux terminal :scp -i /path/to/your/key-pair-name.pem /pat
      
   3. Use the following command to start the server : python3 server.py
 
-#Running Client in Local Machine
+# Running Client in Local Machine
 
   1.Open Terminal on your local machine  :  NOTE:- Not in EC2 terminal
   
   2.Use the following command to run client.py : python3 client.py
 
-##Enter The username and Hit enter
+## Enter The username and Hit enter
 
-###Enter the username of reciptent in the assinged place 
+### Enter the username of reciptent in the assinged place 
 
-###Enter the message in the assinged place and hit enter
+### Enter the message in the assinged place and hit enter
 
-###To see Active users , Click "List of Active user".
+### To see Active users , Click "List of Active user".
 
 
-#Enjoy Chatting without any risk of privacy!!
+# Enjoy Chatting without any risk of privacy!!
