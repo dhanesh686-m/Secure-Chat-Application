@@ -38,11 +38,11 @@ Before you begin, ensure you have the following installed on both your server ma
 
   1. Sign In to AWS Management Console 🚀 using -  https://aws.amazon.com/console/
     
-  3. Navigate to EC2 Dashboard ☁️ AND In the left-hand navigation pane, under "Instances," click on Instances.
+  2. Navigate to EC2 Dashboard ☁️ AND In the left-hand navigation pane, under "Instances," click on Instances.
     
-  5. Launch a New Instance ➕
+  3. Launch a New Instance ➕
      
-  7. Choose an Amazon Machine Image (AMI) 🐧
+  4. Choose an Amazon Machine Image (AMI) 🐧
      
       i)Give your instance a descriptive Name
      
@@ -107,7 +107,7 @@ From your local Kali Linux terminal :scp -i /path/to/your/key-pair-name.pem /pat
 
   1. Use ls cmd to verify the server.py file
     
-  3. Install some dependencies using the followinf Commands :
+  2. Install some dependencies using the followinf Commands :
      
          i)sudo apt update
      
@@ -115,7 +115,7 @@ From your local Kali Linux terminal :scp -i /path/to/your/key-pair-name.pem /pat
      
          iii)pip3 install cryptography
      
-  5. Use the following command to start the server : python3 server.py
+  3. Use the following command to start the server : python3 server.py
 
 #Running Client in Local Machine
 
