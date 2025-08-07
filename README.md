@@ -1,37 +1,18 @@
 # Secure Chat Application 🔒💬
 
 This project implements a basic secure chat application with a client-server architecture using Python. It demonstrates end-to-end encryption for messages exchanged between clients, leveraging RSA for key exchange and AES-256 (GCM mode) for message encryption. The client features a simple Graphical User Interface (GUI) built with tkinter.
-Features ✨
 
-    Client-Server Architecture: A central Python server relays encrypted messages between clients.
+# Features ✨
 
-    End-to-End Encryption: Messages are encrypted on the sender's client and decrypted only on the recipient's client. The server never sees plaintext messages.
+   1.Client-Server Architecture: A central Python server relays encrypted messages between clients.
 
-    RSA Key Exchange: RSA asymmetric encryption is used to securely exchange symmetric AES keys between chat participants.
+   2.End-to-End Encryption: Messages are encrypted on the sender's client and decrypted only on the recipient's client. The server never sees plaintext messages.
 
-    AES-256 GCM Message Encryption: All chat messages are encrypted using AES-256 in Galois/Counter Mode (GCM), providing both confidentiality and integrity.
+   3.RSA Key Exchange: RSA asymmetric encryption is used to securely exchange symmetric AES keys between chat participants.
 
-    GUI Client: An interactive graphical interface for ease of use.
+   4.AES-256 GCM Message Encryption: All chat messages are encrypted using AES-256 in Galois/Counter Mode (GCM), providing both confidentiality and integrity.
 
-# Prerequisites 📦
-
-Before you begin, ensure you have the following installed on both your server machine (AWS EC2 instance) and your client machine :
-
-    Python 3.x:
-
-    sudo apt update
-    sudo apt install python3 python3-pip # For Debian/Ubuntu-based systems like Kali
-    # OR for Amazon Linux (EC2):
-    sudo yum update -y
-    sudo yum install python3 python3-pip -y
-
-    cryptography library: This library provides the cryptographic primitives.
-
-    pip3 install cryptography
-
-    tkinter: Usually comes pre-installed with Python, but if not:
-
-    sudo apt install python3-tk # For Debian/Ubuntu-based systems
+   5.GUI Client: An interactive graphical interface for ease of use.
 
 
 # Create Instance on your preferred webservice provider(I have Used AWS as my Webservice Provider)
